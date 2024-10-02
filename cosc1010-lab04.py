@@ -53,7 +53,7 @@ max_temps = [
 ]
 
 
-min_temps = [
+temps_min = [
     23, 14, 7, 11, 13, 22, 15, 21, 23, 31,
     19, 12, 18, 30, 23, 20, 15, 2, 7, -2,
     2, 3, -2, -8, 5, 8, 16, 1, -8, -26, -26,
@@ -92,7 +92,14 @@ min_temps = [
     17, 28, 23, 25, 23, 23, -3, -15, 19, 5,
     -1, -1, 11, 13
 ]
+temperature = ("max_temps and temps_min")
 
+for temps in temperature:
+    print(f"The average maximum temperature in 2023 is",sum(max_temps) / 365)
+    print(f"The average minimum temperature in 2023 is",sum(temps_min) /365)
+    print(f"The higest maximum temperature in 2023 is",max(max_temps))
+    print(f"The lowest minimum temperature in 2023 is",min(max_temps))
+    break 
 # The above two lists are datasets for the maximum and minimum temperatures for Laramie in 2023.
 # Each of these lists has the same length, indicating that they both have the same index positions.
 # Write a single for loop to calculate both the average maximum temperature and the average minimum temperature.
